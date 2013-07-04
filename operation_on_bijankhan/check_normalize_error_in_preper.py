@@ -79,6 +79,7 @@ def main():
         bijankhan_lines=codecs.open(sys.argv[1], 'r', 'utf-8').readlines();
         write_out_path=codecs.open(sys.argv[2], 'w', 'utf-8');
         bijankhan_exception_list=split_bijankhan_and_add_to_list(bijankhan_lines, bijankhan_exception_list);
+        write_out_path.write('#original_word\tnormalized_word\n');
         for item in bijankhan_exception_list:
             write_out_path.write(item.decode('utf-8')+'\n');
         write_out_path.close()
