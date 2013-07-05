@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+__author__	normalize_with_exception_list.py	/^__author__="kensuke-mi"$/;"	v
+__author__	normalize_with_exception_list.py.py	/^__author__="kensuke-mi"$/;"	v
+__date__	normalize_with_exception_list.py	/^__date__ ="$2013\/07\/04 20:39:25$"$/;"	v
+__date__	normalize_with_exception_list.py.py	/^__date__ ="$2013\/07\/04 20:39:25$"$/;"	v
+codecs	check_goftari.py	/^import sys, codecs;$/;"	i
+codecs	check_normalize_error_in_preper.py	/^import sys, codecs;$/;"	i
+codecs	normalize_by_bijankhan_list.py	/^import sys, codecs;$/;"	i
+codecs	normalize_with_exception_list.py	/^import sys, codecs;$/;"	i
+codecs	normalize_with_exception_list.py.py	/^import sys, codecs;$/;"	i
+compare_wordset_of_bijankhan_and_folklore	check_goftari.py	/^def compare_wordset_of_bijankhan_and_folklore(bijankhan_wordset, folklore_wordset):$/;"	f
+construct_POS_tarining	check_normalize_error_in_preper.py	/^def construct_POS_tarining(bijankhan_lines, bijankhan_POS_set):$/;"	f
+construct_convertion_map_from_bijankhan_list	normalize_by_bijankhan_list.py	/^def construct_convertion_map_from_bijankhan_list(bijankhan_normalization_list, original_normalized_map):$/;"	f
+construct_convertion_map_from_bijankhan_list	normalize_with_exception_list.py	/^def construct_convertion_map_from_bijankhan_list(bijankhan_normalization_list, original_normalized_map):$/;"	f
+construct_map	normalize_with_exception_list.py.py	/^def construct_map(exception_list_lines):$/;"	f
+exception_of_splited_num_is_3	check_goftari.py	/^def exception_of_splited_num_is_3(splited_bijankhan_line):$/;"	f
+exception_of_splited_num_is_4	check_goftari.py	/^def exception_of_splited_num_is_4(splited_bijankhan_line):$/;"	f
+exception_of_splited_num_is_more_than	check_normalize_error_in_preper.py	/^def exception_of_splited_num_is_more_than(splited_bijankhan_line):$/;"	f
+main	check_goftari.py	/^def main():$/;"	f
+main	check_normalize_error_in_preper.py	/^def main():$/;"	f
+main	normalize_by_bijankhan_list.py	/^def main():$/;"	f
+main	normalize_with_exception_list.py	/^def main():$/;"	f
+main	normalize_with_exception_list.py.py	/^def main():$/;"	f
+normalize_line_by_regularexp	post_processing_of_preper.py	/^def normalize_line_by_regularexp(input_line):$/;"	f
+post_preper	check_goftari.py	/^import post_processing_of_preper as post_preper;$/;"	i
+post_preper	check_normalize_error_in_preper.py	/^import post_processing_of_preper as post_preper;$/;"	i
+re	post_processing_of_preper.py	/^import sys, re;$/;"	i
+split_bijankhan_and_add_to_list	check_goftari.py	/^def split_bijankhan_and_add_to_list(bijankhan_lines, bijankhan_wordset):$/;"	f
+split_bijankhan_and_add_to_list	check_normalize_error_in_preper.py	/^def split_bijankhan_and_add_to_list(bijankhan_lines, bijankhan_exception_list):$/;"	f
+split_folklore_and_add_to_list	check_goftari.py	/^def split_folklore_and_add_to_list(folklore_lines, folklore_wordset):$/;"	f
+sys	check_goftari.py	/^import sys, codecs;$/;"	i
+sys	check_normalize_error_in_preper.py	/^import sys, codecs;$/;"	i
+sys	normalize_by_bijankhan_list.py	/^import sys, codecs;$/;"	i
+sys	normalize_with_exception_list.py	/^import sys, codecs;$/;"	i
+sys	normalize_with_exception_list.py.py	/^import sys, codecs;$/;"	i
+sys	post_processing_of_preper.py	/^import sys, re;$/;"	i

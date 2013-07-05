@@ -24,7 +24,7 @@
 #
 
 require 'rubygems'
-require 'virastar'
+require '../lib/virastar/lib/virastar'
 
 my_file = ARGV[0].to_s
 
@@ -223,7 +223,7 @@ open(my_file,"r:UTF-8") do |f|
     
     
     # Prefix notations
-      
+=begin      
     newline.gsub!(/\s+(نا)\s+/,'‌ \1‌')    
     
     newline.gsub!(/\s+(غیر)\s+/,'‌ \1‌') 
@@ -237,7 +237,23 @@ open(my_file,"r:UTF-8") do |f|
     newline.gsub!(/\s+(سوء)\s+/,'‌ \1‌') 
     
     newline.gsub!(/\s+(سوأ)\s+/,'‌ \1‌') 
-     
+=end
+#from here I rewrite for my purpose
+    newline.gsub!(/\s+(نا)\s+/,' \1‌')    
+    
+    newline.gsub!(/\s+(غیر)\s+/,' \1‌') 
+    
+    newline.gsub!(/\s+(بی)\s+/,' \1‌') 
+
+    newline.gsub!(/\s+(فرا)\s+/,' \1‌') 
+   
+    newline.gsub!(/\s+(عدم)\s+/,' \1‌') 
+    
+    newline.gsub!(/\s+(سوء)\s+/,' \1‌') 
+    
+    newline.gsub!(/\s+(سوأ)\s+/,' \1‌') 
+ 
+    puts newline.each_codepoint { |cp| $stdout << "U+" << cp.to_s(16) << " " }     
     puts newline
   end
 end
