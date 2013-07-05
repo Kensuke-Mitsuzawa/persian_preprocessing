@@ -1,0 +1,17 @@
+#! /usr/bin/python
+# -*- coding:utf-8 -*-
+
+import sys, codecs;
+
+def insert_dummy():
+        pass
+
+def main():
+        with codecs.open(sys.argv[1], 'r', 'utf-8') as input_document:
+                for line in input_document:
+                        print [line];
+
+
+if __name__=='__main__':
+        main();
+
