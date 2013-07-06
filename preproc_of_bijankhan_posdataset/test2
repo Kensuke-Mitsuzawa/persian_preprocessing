@@ -1,0 +1,412 @@
+! هنری!	SUBJ
+
+#	۰
+
+روزی	N_SING_TIME_INYA
+
+اینجا	ADV_LOC
+
+شاید	ADV_NI_NQ_SIM
+
+کاروانسرایی	N_SING_COM_INYA
+
+بود	V_PA_SIM_POS_3
+
+.	DELM
+
+#	DELM
+
+#	DELM
+
+یادداشتی	N_SING_COM_INYA
+
+بر	P_GENR
+
+مجموعه	N_SING_GR_GEN
+
+تلویزیونی	ADJ_SIM_GEN
+
+«	DELM
+
+هتل	N_SING_LOC_GEN
+
+»	DELM
+
+صغری	N_SING_PR
+
+آقااحمدی	N_SING_PR
+
+#	DELM
+
+۱	N_SING_CN
+
+-	DELM
+
+از	P_GENR
+
+کاروانسرا	N_SING_LOC
+
+تا	P_GENR
+
+هتل	N_SING_LOC
+
+در	P_GENR
+
+گذشته	N_SING_TIME
+
+:	DELM
+
+در	P_GENR
+
+عصر	N_SING_TIME_GEN
+
+ماقبل	P_GENR_GEN
+
+رسانه‌ها	N_PL_COM
+
+و	CON_GMC
+
+عصر	N_SING_TIME_GEN
+
+ماقبل	P_GENR_GEN
+
+ارتباطات	N_PL_COM
+
+،	DELM
+
+یکی	PRO_INDF_NRS
+
+از	P_GENR
+
+راههای	N_PL_COM_GEN
+
+ارتباط	N_SING_COM
+
+و	CON_GMC
+
+انتقال	N_SING_COM_GEN
+
+اندیشه	N_SING_COM
+
+و	CON_GMC
+
+فرهنگ	N_SING_COM
+
+و	CON_GMC
+
+زبان	N_SING_COM
+
+و	CON_GMC
+
+نقل	N_SING_COM_GEN
+
+اخبار	N_PL_COM
+
+اتراق	N_SING_COM
+
+کردن	N_SING_NFL
+
+در	P_GENR
+
+کاروانسراها	N_PL_COM
+
+و	CON_GMC
+
+قهوه خانه‌هایی	N_PL_LOC_INYA
+
+بود	V_PA_SIM_POS_3
+
+که	CON_RELC
+
+در	P_GENR
+
+مسیر	N_SING_COM_GEN
+
+کاروانها	N_PL_COM
+
+ساخته	ADJ_INO
+
+می‌شدند	V_PA_PRG_POS_6
+
+.	DELM
+
+پیشه وران	N_PL_COM
+
+،	DELM
+
+بازرگانان	N_PL_COM
+
+،	DELM
+
+ادیبان	N_PL_COM
+
+،	DELM
+
+سخنوران	N_PL_COM
+
+،	DELM
+
+قاصدان	N_PL_COM
+
+و	CON_GMC
+
+هنرمندان	N_PL_COM
+
+از	P_GENR
+
+جمله	SPEC
+
+کسانی	N_PL_COM_INYA
+
+بودند	V_PA_SIM_POS_6
+
+که	CON_RELC
+
+زمان	N_SING_COM_GEN
+
+استراحت	N_SING_COM
+
+در	P_GENR
+
+این	DET
+
+مکانها	N_PL_COM
+
+اغلب	PRO_INDF_NRP
+
+گرد	N_SING_COM_GEN
+
+هم	PRO_DEF_REC
+
+جمع	N_SING_GR
+
+می‌شدند	V_PA_PRG_POS_6
+
+و	CON_GMC
+
+از	P_GENR
+
+رموز	N_PL_COM_GEN
+
+فن	N_SING_COM
+
+و	CON_GMC
+
+علم	N_SING_COM
+
+و	CON_GMC
+
+هنر	N_SING_COM
+
+و	CON_GMC
+
+زبان	N_SING_COM_GEN
+
+همدیگر	PRO_DEF_REC
+
+آگاهی	N_SING_COM
+
+پیدا	ADJ_SIM
+
+می‌کردند	V_PA_PRG_POS_6
+
+و	CON_GMC
+
+هر	QUA
+
+یک	N_SING_CN
+
+ره توشه‌ای	N_SING_COM_INYA
+
+از	P_GENR
+
+این	DET
+
+کالای	N_SING_COM_GEN
+
+گرانبها	ADJ_SIM
+
+با	P_GENR
+
+خود	PRO_DEF_R_XOD
+
+می‌بردند	V_PA_PRG_POS_6
+
+.	DELM
+
+حال	ADV_TIME
+
+بعد	N_SING_COM
+
+از	P_GENR
+
+گذشت	N_SING_COM_GEN
+
+سالیانی	N_PL_TIME_INYA
+
+دراز	ADJ_SIM
+
+،	DELM
+
+وقتی	CON_GMC
+
+کاروانسراها	N_PL_COM
+
+و	CON_GMC
+
+قهوه	N_SING_COM
+
+خانه‌ها	N_PL_LOC
+
+تبدیل	N_SING_COM
+
+به	P_GENR
+
+هتل‌های	N_PL_LOC_GEN
+
+شیک	ADJ_SIM
+
+و	CON_GMC
+
+مسافرخانه‌های	N_PL_LOC_GEN
+
+امروزی	ADJ_SIM
+
+شد	V_PA_SIM_POS_3
+
+،	DELM
+
+دیگر	ADV_NEGG
+
+هیچ	QUA
+
+حرفی	N_SING_COM_INYA
+
+و	CON_GMC
+
+حرکتی	N_SING_COM_INYA
+
+از	P_GENR
+
+آن	DET
+
+ارتباط	N_SING_COM
+
+و	CON_GMC
+
+انتقال	N_SING_COM
+
+اندیشه	N_SING_COM
+
+و	CON_GMC
+
+فرهنگ	N_SING_COM
+
+و	CON_GMC
+
+زبان	N_SING_COM
+
+در	P_GENR
+
+کار	N_SING_COM
+
+نیست	V_PRS_NEG_3
+
+.	DELM
+
+این	DET
+
+مکانها	N_PL_COM
+
+مجموعه‌های	N_PL_GR_GEN
+
+دربسته‌ای	ADJ_SIM_INYA
+
+شدند	V_PA_SIM_POS_6
+
+که	CON_RELC
+
+تنها	ADV_NI_NQ_SIM
+
+برای	P_GENR_GEN
+
+دمی	N_SING_COM_INYA
+
+آساییدن	N_SING_NFL
+
+مهیا	ADJ_SIM
+
+شده‌اند	V_PA_NAR_POS_6
+
+و	CON_GMC
+
+بس	ADV_NI_NQ_SIM
+
+،	DELM
+
+مکانهایی	N_PL_COM_INYA
+
+با	P_GENR
+
+خوش ساخت‌ترین	ADJ_SUP
+
+شکل	N_SING_COM
+
+و	CON_GMC
+
+نما	ADJ_SIM
+
+و	CON_GMC
+
+سرویس‌های	N_PL_COM_GEN
+
+خدماتی	ADJ_SIM_GEN
+
+آنچنانی	ADJ_SIM
+
+.	DELM
+
+۲	N_SING_CN
+
+-	DELM
+
+هتل	N_SING_LOC
+
+و	CON_GMC
+
+چهره‌ها	N_PL_COM
+
+:	DELM
+
+مرضیه	N_SING_PR_GEN
+
+برومند	N_SING_PR
+
+در	P_GENR
+
+سریال	N_SING_COM_GEN
+
+«	DELM
+
+هتل	N_SING_LOC
+
+»	DELM
+
+شاید	ADV_NI_NQ_SIM
+
+در	P_GENR
+
+تلاش	N_SING_COM
+
+بوده	ADJ_INO
+
+که	CON_RELC
+
+با	P_GENR
+
+استفاده	N_SING_COM
+
+از	P_GENR
+
+موقعیت	N_SING_COM
+
