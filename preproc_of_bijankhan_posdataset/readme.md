@@ -19,5 +19,5 @@ I improved both of pre_per2.rb and virastar to fit my purpose.
 ## files
 
 preproc_of_bijankhan.py:main script  
-dummy.py:insert dummy tag before pre_per2.rb  
-delete_dummy.py:remove dummy tag after pre_per2.rb  
+dummy.py:insert dummy tag before pre_per2.rb   
+delete_dummy.py:remove dummy tag after pre_per2.rb    

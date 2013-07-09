@@ -1,7 +1,7 @@
 #! /usr/bin/python
 # -*- coding:utf-8 -*-
-__author__=="Kensuke Mitsuzawa"
-__version__=="2013/7/6"
+__author__="Kensuke Mitsuzawa"
+__version__="2013/7/6"
 
 import sys, codecs;
 
