@@ -1,6 +1,5 @@
 #! /usr/bin/python
 # -*- coding:utf-8 -*-
-
 __autohor__='Kensuke Mitsuzawa';
 __version__='2013/7/11';
 import codecs, sys, os;
@@ -10,8 +9,7 @@ def parse_and_get_text(file_path):
     xmltree=ElementTree.parse(file_path);
     persian_sentences=xmltree.findall(u'//ペルシア語文');
     for persian_sent in persian_sentences:
-        #print persian_sent.text;
-        #TODO なぜだかわからないけど，NONEが返されている．xmlのエラーかもわからないので，ファイルをチェックしてみること   
+        print persian_sent.text;
         if persian_sent.text==None:
             pass;
         else:
