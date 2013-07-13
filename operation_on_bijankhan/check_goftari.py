@@ -93,13 +93,16 @@ def main():
             if bijankhan_normalize_commands[0]!=0:
                 sys.exit(bijankhan_normalize_commands[1])
             bijankhan_wordset=split_bijankhan_and_add_to_list(normalized_bijankhan, bijankhan_wordset);
+            bijankhan_wordset=list(set(bijankhan_wordset));
             folklore_normalization_commands=\
                 commands.getstatusoutput('python ../preproc_of_folklore_corpus/preproc_folklore_corpus.py {0} {1}'.format(sys.argv[2], normalized_folklore));
             if folklore_normalization_commands[0]!=0:
                 sys.exit(folklore_normalization_commands[1]);
             folklore_wordset=split_folklore_and_add_to_list(normalized_folklore, folklore_wordset);
+            folklore_wordset=list(set(folklore_wordset));
             print 'the num. of words in folklore corpus',len(folklore_wordset);
             compared_wordset=compare_wordset_of_bijankhan_and_folklore(bijankhan_wordset, folklore_wordset);
+            compared_wordset=list(set(compared_wordset));
             print 'the num. of words filterd out by Bijankhan wordset', len(compared_wordset);
             for compared_items in compared_wordset: writeout_compared.write(compared_items+u'\n');
             for bijankhan_items in bijankhan_wordset: writeout_bijankhan_set.write(bijankhan_items+u'\n');

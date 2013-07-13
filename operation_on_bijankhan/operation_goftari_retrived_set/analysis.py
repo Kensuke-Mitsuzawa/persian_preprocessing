@@ -28,6 +28,8 @@ def main():
             line=remove_marks(line);
             if not line in input_lines:
                 filtered_out_set.append(line);
+        print 'Before converting to set', len(filtered_out_set);
+        filtered_out_set=list(set(filtered_out_set));
         print 'After filtering out', len(filtered_out_set);
         for item in filtered_out_set: write_out.write(item);
     else:
