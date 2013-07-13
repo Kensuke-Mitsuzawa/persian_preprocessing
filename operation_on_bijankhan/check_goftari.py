@@ -57,7 +57,8 @@ def split_folklore_and_add_to_list(folklore_path, folklore_wordset):
                 for line in lines:
                         items=(line.strip(u'\n').strip(u'.')).split();
                         for folklore_word in items:
-                            folklore_wordset.append(folklore_word);
+                            if not folklore_word in folklore_wordset:
+                                folklore_wordset.append(folklore_word);
         return folklore_wordset;
 
 def compare_wordset_of_bijankhan_and_folklore(bijankhan_wordset, folklore_wordset):

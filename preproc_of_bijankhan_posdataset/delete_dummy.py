@@ -11,15 +11,17 @@ def delete_dummy(line):
         Output format is string in unicode.
         """
         write_out_format=u'';
-	try:
-		line=line.strip(u'\n');
-       		surface_word, POS=line.split(u'\t');
-        	prefix_deleted=re.sub(ur'<dummy>\s?', ur'', surface_word);
-        	suffix_deleted=prefix_deleted.replace(u'</dummy>', u'').strip();
-        	write_out_format=suffix_deleted+u'\t'+POS+u'\n';
-        	return write_out_format;
-	except:
-		print [line];
+        #There's case that a input line is only u'\n'. In such case, method 'split(u'\t')' fails. To avoid this problem, I put the condition for u'\n'.
+        if not line==u'\n':
+            line=line.strip(u'\n');
+       	    surface_word, POS=line.split(u'\t');
+            prefix_deleted=re.sub(ur'<dummy>\s?', ur'', surface_word);
+            suffix_deleted=prefix_deleted.replace(u'</dummy>', u'').strip();
+            write_out_format=suffix_deleted+u'\t'+POS+u'\n';
+            return write_out_format;
+        else:
+	    #print 'error', [line];
+            pass
 def main():
         if len(sys.argv)==3:
                 write_out=codecs.open(sys.argv[2], 'w', 'utf-8');

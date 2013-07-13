@@ -29,7 +29,8 @@ def main():
                 with codecs.open(out_of_preper, 'r', 'utf-8') as after_preper:
                         for line in after_preper:
                                 write_out_format=delete_dummy.delete_dummy(line);
-                                system_out.write(write_out_format);
+                                if write_out_format==None: pass
+                                else: system_out.write(write_out_format);
                 system_out.close();
                 commands.getoutput('rm {0} {1}'.format(out_of_dummy, out_of_preper));
 if __name__=='__main__':
