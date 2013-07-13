@@ -6,8 +6,8 @@ from subprocess import PIPE, Popen;
 import separate_period;
 
 def call_pre_per2(input_path, out_path):
-        status_tuple=commands.getstatusoutput('ruby1.9 ../lib/pre_per2.rb {0} > {1}'.format(input_path, out_path));
-        if status_tuple[0]==256:
+        status_tuple=commands.getstatusoutput('ruby1.8 ../lib/pre_per2.rb {0} > {1}'.format(input_path, out_path));
+        if status_tuple[0]!=0:
                 sys.exit(status_tuple);
 def main():
         if len(sys.argv)==3:

@@ -17,8 +17,8 @@ def main():
                                 write_out_format=dummy.insert_dummy(line);
                                 write_out.write(write_out_format);
                 write_out.close();
-                status_tuple=commands.getstatusoutput('ruby1.9 ../lib/pre_per2.rb {0} > {1}'.format(out_of_dummy, out_of_preper));
-                if status_tuple[0]==256:
+                status_tuple=commands.getstatusoutput('ruby1.8 ../lib/pre_per2.rb {0} > {1}'.format(out_of_dummy, out_of_preper));
+                if status_tuple[0]!=0:
                         sys.exit(status_tuple);
                 """
                 file_of_out_of_preper=codecs.open(out_of_preper, 'w', 'utf-8');

@@ -13,7 +13,7 @@ def insert_dummy(line):
         prefix_dummy_tag=u'<dummy>  ';
         suffix_dummy_tag=u'  </dummy>';
         dummied_word=prefix_dummy_tag+u''.join(surface_word)+suffix_dummy_tag;
-        write_out_format=dummied_word+u'\t'+u''.join(POS);
+        write_out_format=dummied_word+u'\t'+u''.join(POS)+u'\n';
         return write_out_format;
 def main():
         if len(sys.argv)==3:

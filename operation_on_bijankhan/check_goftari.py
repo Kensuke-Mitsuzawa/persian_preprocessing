@@ -16,6 +16,13 @@ def exception_of_splited_num_is_4(splited_bijankhan_line):
     semispace_concatenated=(splited_bijankhan_line[0]+u'\u200C'+splited_bijankhan_line[1]+u'\u200C'+splited_bijankhan_line[2]);
     return semispace_concatenated;
 
+def exception_of_splited_num_is_more_than(splited_bijankhan_line):
+    semispace_concatenated=u'';
+    del splited_bijankhan_line[-1];
+    for item in splited_bijankhan_line: semispace_concatenated=semispace_concatenated+item+u'\u200C';
+    semispace_concatenated=semispace_concatenated.strip(u'\u200C');
+    return semispace_concatenated;
+
 def split_bijankhan_and_add_to_list(normalized_bijankhan_path, bijankhan_wordset):
     """
     OUTLINE:this function constructs wordset from bijankhan corpus
@@ -25,17 +32,23 @@ def split_bijankhan_and_add_to_list(normalized_bijankhan_path, bijankhan_wordset
             for bijankhan_line in normalized_bijankhan_file: 
                 bijankhan_line=bijankhan_line.strip(u'\n');
                 bijankhan_line=post_preper.normalize_line_by_regularexp(bijankhan_line);
-                if len(bijankhan_line.split())==0:
-                        pass
-                elif len(bijankhan_line.split())==3:
-                        bijankhan_word=exception_of_splited_num_is_3(bijankhan_line.split());
-                elif len(bijankhan_line.split())==4:
-                        bijankhan_word=exception_of_splited_num_is_4(bijankhan_line.split());
-                else:
-                        bijankhan_word, bijankhan_pos=bijankhan_line.split();
+                try:
+                    """
+                    elif len(bijankhan_line.split())==3:
+                    bijankhan_word=exception_of_splited_num_is_3(bijankhan_line.split());
+                    elif len(bijankhan_line.split())==4:
+                    bijankhan_word=exception_of_splited_num_is_4(bijankhan_line.split());
+                    """
+                    if len(bijankhan_line.split(u'\t')) > 2:
+                        bijankhan_word=exception_of_splited_num_is_more_than(bijankhan_line);
+                    elif len(bijankhan_line.split(u'\t'))==1 :pass
+                    else:
+                        bijankhan_word, bijankhan_pos=bijankhan_line.split(u'\t');
+		except:
+			print [bijankhan_line];		
 
                 if not bijankhan_word in bijankhan_wordset:
-                        bijankhan_wordset.append(bijankhan_word);
+                    bijankhan_wordset.append(bijankhan_word);
                 else: pass
     return bijankhan_wordset;
 
