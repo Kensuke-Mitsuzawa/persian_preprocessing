@@ -7,6 +7,7 @@ __version__='2013/7/14'
 import sys, codecs, string;
 
 def remove_marks(word):
+    #This code is valid under Python version <=2.7
     word=word.translate({
         ord(u',') : None,
         ord(u'.') : None,
@@ -14,7 +15,9 @@ def remove_marks(word):
         ord(u')') : None,
         ord(u'[') : None,
         ord(u']') : None,
-        ord(u'،') : None
+        ord(u'،') : None,
+        ord(u'؟') : None,
+        ord(u'«') : None
     })
     return word;
 def main():

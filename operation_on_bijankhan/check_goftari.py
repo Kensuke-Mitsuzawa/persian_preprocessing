@@ -6,7 +6,7 @@ import sys, codecs, commands, os;
 import post_processing_of_preper as post_preper;
 sys.path.append('../preproc_of_folklore_corpus');
 sys.path.append('../preproc_of_bijankhan_posdataset');
-import preproc_of_bijankhan, preproc_folklore_corpus;
+import preproc_of_bijankhan, preproc_folklore_corpus, remove_marks;
 
 #覚え書き　３と４の例外は時々呼ばれているようなので，必要
 def exception_of_splited_num_is_3(splited_bijankhan_line):
@@ -29,7 +29,7 @@ def split_bijankhan_and_add_to_list(normalized_bijankhan_path, bijankhan_wordset
     DESCRIPTION:In the bijankhan corpus, each data is tab separated cf."word\tPOS". Thus, this function split each line by '\t'. Sometimes the number of elements in the splited list is more than 2. This is because words in bijankhan corpus is concatenated by normal space. In that case, this code copes with other functions 'exception_of_aplited_num_is_*'. These functions concatenate prefix and stem and suffix by semi-space(ZWNJ).
     """
     with codecs.open(normalized_bijankhan_path, 'r', 'utf-8') as normalized_bijankhan_file:
-       for bijankhan_line in normalized_bijankhan_file:
+        for bijankhan_line in normalized_bijankhan_file:
             bijankhan_line=bijankhan_line.strip(u'\n');
             bijankhan_line=post_preper.normalize_line_by_regularexp(bijankhan_line);
             try:
@@ -53,20 +53,21 @@ def split_bijankhan_and_add_to_list(normalized_bijankhan_path, bijankhan_wordset
     return bijankhan_wordset;
 
 def split_folklore_and_add_to_list(folklore_path, folklore_wordset):
-        with codecs.open(folklore_path, 'r', 'utf-8') as lines:
-                for line in lines:
-                        items=(line.strip(u'\n').strip(u'.')).split();
-                        for folklore_word in items:
-                            if not folklore_word in folklore_wordset:
-                                folklore_wordset.append(folklore_word);
-        return folklore_wordset;
+    with codecs.open(folklore_path, 'r', 'utf-8') as lines:
+        for line in lines:
+            items=(line.strip(u'\n').strip(u'.')).split();
+            for folklore_word in items:
+                folklore_word=remove_marks.remove_marks(folklore_word);
+                if not folklore_word in folklore_wordset:
+                    folklore_wordset.append(folklore_word);
+    return folklore_wordset;
 
 def compare_wordset_of_bijankhan_and_folklore(bijankhan_wordset, folklore_wordset):
-        for bijankhan_word in bijankhan_wordset:
-                if bijankhan_word in folklore_wordset:
-                        folklore_wordset.remove(bijankhan_word);
-                else: pass#print '{0} is not in the list\n'.format(bijankhan_word.encode('utf-8'));
-        return folklore_wordset;
+    for bijankhan_word in bijankhan_wordset:
+            if bijankhan_word in folklore_wordset:
+                    folklore_wordset.remove(bijankhan_word);
+            else: pass#print '{0} is not in the list\n'.format(bijankhan_word.encode('utf-8'));
+    return folklore_wordset;
 def get_recursive_list(directory_path):
     if directory_path[-1]!='/':
         directory_path=directory_path+'/';
